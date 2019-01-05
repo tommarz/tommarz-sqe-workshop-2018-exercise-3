@@ -4,8 +4,7 @@ import {substitute_func_decl, Scope} from './symbolic-substitution';
 import {bind_params, parse_input_vector} from './code-painter';
 import * as escodegen from 'escodegen';
 
-let split_dot = [], type_dot = [], shaped_nodes = [], painted_nodes = [], flow_nodes = [], edges = [];
-let flow_map;
+let split_dot = [], type_dot = [], shaped_nodes = [], painted_nodes = [], flow_nodes = [], edges = [], flow_map;
 
 function program_graph(codeToParse, input) {
     flow_map = new Map();
