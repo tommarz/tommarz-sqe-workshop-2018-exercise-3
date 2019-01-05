@@ -40,27 +40,22 @@
         </td>
         <td>
             <div>
-                <label>Code after symbolic substitution</label>
+                <label>CFG</label>
             </div>
-
         </td>
     </tr>
     <tr>
         <td>
             <div class="textAreaWrapper">
-                <textarea id="codePlaceholder" title="Enter code here"></textarea>
+                <label for="codePlaceholder"></label><textarea id="codePlaceholder" title="Enter code here"></textarea>
             </div>
             <label>Input in the format arg-1,arg-2 ... arg-n</label>
             <div class="inputAreaWrapper">
-                <textarea id="inputVector" title="Enter input here"></textarea>
+                <label for="inputVector"></label><textarea id="inputVector" title="Enter input here"></textarea>
             </div>
         </td>
         <td>
-            <div class="outputAreaWrapper">
-                <textarea id="parsedCode" title="Parse code"></textarea>
-            </div>
-            <div id="paintedCode" class="outputAreaWrapper">
-                <label>Code after painting</label>
+            <div id="cfg" class="outputAreaWrapper">
             </div>
         </td>
     </tr>

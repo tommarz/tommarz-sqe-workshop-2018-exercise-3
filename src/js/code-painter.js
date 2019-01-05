@@ -9,6 +9,7 @@ function bind_params(func_decl, input) {
     let func_params = func_decl.params.map((param) => escodegen.generate(param));
     for (let i = 0; i < input.length; i++)
         param_bindings[func_params[i]] = input[i]; // bind number
+    return param_bindings;
 }
 
 const parse_input_vector = input =>
@@ -59,4 +60,4 @@ let paint_func_map = {
     'FunctionDeclaration': paint_func_decl,
 };
 
-export {paint_program};
+export {paint_program, bind_params, param_bindings, parse_input_vector};

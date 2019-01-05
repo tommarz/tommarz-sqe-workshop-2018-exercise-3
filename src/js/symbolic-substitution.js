@@ -124,4 +124,4 @@ let sub_func_map = {
     'MemberExpression': substitute_mem_expr
 };
 
-export {substitute_program_expr, substitute, Scope};
+export {substitute_program_expr, substitute, Scope, substitute_func_decl};
